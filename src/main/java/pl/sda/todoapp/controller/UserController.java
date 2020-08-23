@@ -38,10 +38,10 @@ public class UserController {
         }
 
         if (userService.saveUser(userDto)) {
-            return "redirect:/";
+            return "redirect:/login";
         } else {
             // TODO: coś z tym można jeszcze zrobić
-            return "redirect:/";
+            return "redirect:/login";
         }
     }
 }
